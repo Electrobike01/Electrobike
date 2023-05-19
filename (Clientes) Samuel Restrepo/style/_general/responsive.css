@@ -1,0 +1,59 @@
+/* Propiedades generales del estilo */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    /* ===== Guardar colores principales ===== */
+    --body-color: white;
+    --sidebar-color: #1D1D1B;
+    --primary-color: #118dd5;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color:rgb(220, 220, 220);
+    --form-color: #D8D8D8;
+    --header-color:#118dd5;
+    --register-button: var(--primary-color);
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+    .user{
+       
+    }
+
+}
+/* ------------------------------------------------  */
+
+
+
+@media screen and (max-width: 1199px) {
+
+}
+	
+@media screen and (max-width: 849px) and (min-width: 768px) {
+
+}
+	
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 575px) {
+
+
+}
+	
+

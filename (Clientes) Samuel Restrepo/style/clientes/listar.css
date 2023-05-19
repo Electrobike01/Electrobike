@@ -1,0 +1,166 @@
+/* Propiedades generales del estilo */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  /* ===== Guardar colores principales ===== */
+  --body-color: white;
+  --sidebar-color: #1D1D1B;
+  --primary-color: #118dd5;
+  --primary-color-light: #F6F5FF;
+  --toggle-color: #DDD;
+  --text-color: rgb(220, 220, 220);
+  --form-color: #D8D8D8;
+  --header-color: #118dd5;
+  --register-button: var(--primary-color);
+
+  /* ====== Transition ====== */
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
+}
+/* --------- buscados dinamico ---------  */
+.elementos {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+
+.bus {
+  margin-left: 30px;
+  width: calc(100% - 40px)
+}
+
+
+
+.vinculo {
+  justify-self: start;
+}
+
+.buscador {
+  justify-self: end;
+
+}
+
+.inexistente {
+  display: none;
+}
+
+.inexistente_ {
+  display: none;
+}
+
+.Inactivo .estadoModulo {
+  color: #ff4300 !important;
+
+}
+
+.Activo .estadoModulo {
+
+  color: #67ad5d !important;
+}
+
+.buscador {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#inactivos {
+  margin-top: 10px;
+  width: 100px;
+  margin-left: 120px;
+}
+
+
+input[type="text"] {
+
+  padding: 5px;
+
+  border-radius: 5px;
+  margin-right: 10px;
+
+}
+/* --------------------------------- FORMULARIO ACTUALIZAR MODULO ---------------------------------- */
+.ventaActualizarModulo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #292929d9;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s;
+  z-index: 100;
+}
+
+.ventaActualizarModulos--show {
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .3s;
+}
+
+/* //Abuelo */
+.contenedorActualizarModulo {
+  margin: auto;
+  width: 90%;
+  max-width: 700px;
+  height: 90%;
+  background-color: white;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.tituloVentana {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.contenedorEstado {
+  display: grid;
+  grid-template-columns: 50%50%;
+  gap: 1em;
+}
+
+.contenedorBotones {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50%50%;
+  gap: 10px;
+  margin-top: 30px !important;
+}
+
+.contenedorActualizar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1250px) {
+  .btn {
+    margin-top: 10px;
+  }
+}
