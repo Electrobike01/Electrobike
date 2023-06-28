@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+
+  <!----===== SweetAlert ===== -->
+  <script src="../dependencias/sweetAlert/js/sweetAlert-main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.css">
+
+</head>
+
+<body onload="chekearSesion()">
+  <div class="wrapper ">
+
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active">Iniciar session </h2>
+
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="../img/Logo_electrobike.svg" id="icon" />
+      </div>
+
+      <!-- Login -->
+      <form id="iniciar">
+        <input type="email" id="correo" class="fadeIn second" name="correo" placeholder="Email">
+        <input type="pass" id="contrasena" class="fadeIn third" name="contrasena" placeholder="Contrasena">
+
+        <input type="submit"  class="fadeIn fourth" name="iniciar" value="Iniciar">
+      </form>
+
+
+
+      <!-- Recordar contrasena   -->
+      <div id="formFooter">
+        <a class="underlineHover" href="../views/dashboard/index.php">Olvido la contrasena?</a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.css">
+  <script src="login.js"></script>
+
+</body>
+
+</html>
